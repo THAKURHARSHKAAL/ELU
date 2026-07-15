@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="52dp"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/tvSeatAvatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_pill_white"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/text_muted"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSeatMic"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/bg_circle_gradient"
+            android:gravity="center"
+            android:text="🎤"
+            android:textSize="9sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvSeatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Empty"
+        android:textColor="@color/text_muted"
+        android:textSize="10sp" />
+
+</LinearLayout>

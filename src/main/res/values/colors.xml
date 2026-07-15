@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base surfaces (old dark names kept so every existing layout re-skins automatically) -->
+    <color name="bg_dark">#FBFAF7</color>
+    <color name="card_dark">#FFFFFF</color>
+    <color name="field_dark">#F3F4F6</color>
+
+    <!-- Same aliases, clearer names for new screens -->
+    <color name="bg_light">#FBFAF7</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="field_light">#F3F4F6</color>
+
+    <!-- Brand accents - now pastel instead of neon -->
+    <color name="elu_pink">#FF9BC5</color>
+    <color name="elu_purple">#B9AEF0</color>
+    <color name="elu_blue">#5CC9E8</color>
+    <color name="elu_orange">#FFD976</color>
+    <color name="elu_mint">#8FE8D8</color>
+    <color name="elu_lavender">#B9AEF0</color>
+    <color name="elu_sky">#5CC9E8</color>
+    <color name="elu_yellow">#FFD976</color>
+
+    <!-- Text - "white" now means "high contrast on light surface", i.e. dark -->
+    <color name="text_white">#2C3E50</color>
+    <color name="text_grey">#9AA5B1</color>
+    <color name="text_dark">#2C3E50</color>
+    <color name="text_muted">#9AA5B1</color>
+    <color name="text_faint">#B7C0C9</color>
+
+    <!-- Header gradient stops used on Home/Explore/Party headers -->
+    <color name="header_mint">#B9F0E4</color>
+    <color name="header_sky">#9FDCF0</color>
+    <color name="header_pink">#FFD9E8</color>
+    <color name="header_lavender">#D9CBF7</color>
+</resources>

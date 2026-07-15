@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This is a REFERENCE snippet, not a full manifest.
+  Merge the <application> attributes and the 4 <activity> tags below
+  into your EXISTING app/src/main/AndroidManifest.xml.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/elu_logo"
+        android:roundIcon="@drawable/elu_logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Elu">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Elu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".SignupActivity" android:exported="false" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".ExploreActivity" android:exported="false" />
+        <activity android:name=".PeopleActivity" android:exported="false" />
+        <activity android:name=".LeaderboardActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".RoomListActivity" android:exported="false" />
+        <activity android:name=".CreateRoomActivity" android:exported="false" />
+        <activity android:name=".RoomDetailActivity" android:exported="false" />
+        <activity android:name=".ChatListActivity" android:exported="false" />
+        <activity android:name=".ConversationActivity" android:exported="false" />
+        <activity android:name=".GameActivity" android:exported="false" />
+        <activity android:name=".MomentActivity" android:exported="false" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

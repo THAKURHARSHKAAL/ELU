@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textColor="@color/text_white"
+        android:textSize="22sp" />
+
+    <View android:layout_width="0dp" android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Party Room"
+        android:textColor="@color/text_white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View android:layout_width="0dp" android:layout_height="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Room Icon"
+        android:textColor="@color/text_white"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvSelectedEmoji"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_pill_white"
+            android:gravity="center"
+            android:text="🎮"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/btnChangeEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Change"
+            android:textColor="@color/elu_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etRoomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_edittext_blue"
+        android:hint="Room name (e.g. Friday Night Chill)"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_grey" />
+
+    <View android:layout_width="0dp" android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_gradient_button"
+        android:text="🎉  Create Room"
+        android:textAllCaps="false"
+        android:textColor="@color/text_white"
+        android:textStyle="bold" />
+
+</LinearLayout>
